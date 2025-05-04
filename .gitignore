@@ -1,0 +1,7 @@
+__pycache__/
+vector_cache/
+*.pkl
+*.pyc
+.env
+
+
