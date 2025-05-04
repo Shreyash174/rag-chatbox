@@ -11,9 +11,9 @@ import warnings
 import argparse
 import pickle
 
-# ✅ Suppress LangChain warnings and TensorFlow logs
+
 warnings.filterwarnings("ignore", category=DeprecationWarning, module="langchain.*")
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # Suppress TensorFlow info logs
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  
 
 CACHE_DIR = "vector_cache"
 os.makedirs(CACHE_DIR, exist_ok=True)
